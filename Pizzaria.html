@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+</head>
+<body>
+
+    <!-- checkbox para casos de escolhas de mais de 1 item simultâneos.
+    em "name" é necessário deixar o "[]" no final do item digitado, para que o receptor possa compreender que se
+trata de uma lista e que todos os valores selecionados devem ser considerados.
+
+Radio para escolhas únicas entre 2 ou mais opções. Não esquecer de preencher o atributo "name", caso ontrário,
+será pssível selecionar mais de 1 opção, o que não é correto, no caso do Radio.
+-->
+
+    <form method="post">
+        <h3>Você selecionou: Pizza de Quatro-Queijos</h3>
+        <p>Quais opcionais você deseja?</p>
+        <input type="checkbox" name="opcional []" value="queijo mussarela"> +queijo mussarela <br>
+        <input type="checkbox" name="opcional []" value="queijo provolone"> +queijo provolone <br>
+        <input type="checkbox" name="opcional []" value="queijo prato"> +queijo prato <br>
+        <input type="checkbox" name="opcional []" value="queijo gorgonzola"> +queijo gorgonzola <br>
+        <P>Borda recheada?</P>
+        <input type="radio" name="borda" value="sim">Sim<br>
+        <input type="radio" name="borda" value="não">Não<br>
+        <P>Bebida</P>
+        <input type="radio" name="bebida" value="suco">Suco<br>
+        <input type="radio" name="bebida" value="refrigerante">Refrigerante<br>
+        <input type="radio" name="bebida" value="agua">Água<br>
+        <input type="radio" name="bebida" value="nenhum">Nenhum<br>
+
+        <button type="submit">Enviar Pedido</button>
+
+    </form>
+</body>
+</html>
