@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+
+    <!--
+        Nosso "button" só será útil após criação de comando Javascript para envio para algum servidor,
+        por exemplio. onclick="alert('Cliquei Aqui')" e onmouseover="alert('passei aqui')" são comandos
+        javascript para ação ao clicar ou passar o mouse em cima do button criado.
+        Reset só limpa os inputs dentro da tag, <form>, caso tenha outra tag <form> no HTML, será 
+        necessário por exemplo outro button reset para limpar este se gundo formulário.
+
+        Por questãoes de segurança, sempre é necessário validar o envio do formulário, antes do envio de fato,
+        e ser revalidado quando chegar no backend, pois algumas coisas no frontend são facilmente "burláveis".
+    -->
+
+    <form onsubmit="" method="get">
+        <label>Nome*:</label><input type="text" name="name"><br>
+        <label>Idade*:</label><input type="number" name="age"><br>
+        <label>Password:*</label><input type="password" name="password"><br>
+
+        <button type="button" onclick="alert('Cliquei Aqui')">Clicável</button>
+        <button type="button" onmouseover="alert('passei aqui')">Clicável</button>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
